@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/calculatorOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayoutInputContainer"
+            android:layout_alignParentTop="true"
+            android:text="@string/text_intro" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayoutInputContainer">
+            <TextView
+                android:text="@string/text_mortgage_amount"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMortgageAmount"
+                android:gravity="right" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextMortgageAmount"
+                android:gravity="right"
+                android:hint="@string/hint_dollar" />
+            <TextView
+                android:text="@string/text_interest_rate"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewInterestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextInterestRate"
+                android:gravity="right"
+                android:hint="@string/hint_percent" />
+            <TextView
+                android:text="@string/text_mortgage_period"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMortgagePeriod"
+                android:gravity="right" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextMortgagePeriod"
+                android:gravity="right"
+                android:hint="@string/hint_years" />
+            <Button
+                android:text="@string/button_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculateButton"
+                android:enabled="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

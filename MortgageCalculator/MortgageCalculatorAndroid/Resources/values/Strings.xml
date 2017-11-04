@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Mortgage Calculator</string>
+  <string name="action_settings">Settings</string>
+	<string name="button_calculate">Calculate</string>
+	<string name="description_remove_ads">Remove ads</string>
+  <string name="hint_dollar">$</string>
+  <string name="hint_percent">%</string>
+  <string name="hint_years">Years</string>
+  <string name="text_intro">Input the information below to calculate the total and monthly cost for your mortgage</string>
+  <string name="text_mortgage_amount">Mortgage amount</string>
+  <string name="text_mortgage_period">Mortgage period</string>
+  <string name="text_interest_rate">Interest rate</string>
+</resources>
